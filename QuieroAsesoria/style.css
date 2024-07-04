@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TT Firs Neue Trial Var Roman', sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header""main""footer";
+
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: solid 2px rgb(194, 192, 192);
+    padding: 1em 1.5em 0.5em 1em;
+}
+
+.logoimg {
+    height: auto;
+    width: 10em;
+    object-fit: cover;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+
+}
+ 
+li {
+    font-size: 2em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #104570;
+    font-weight: bolder;
+}
+
+.nav2 {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:3em;
+}
+
+.allizhead {
+    width: 12.5em;
+    height:auto;
+    object-fit: cover;
+    justify-self: flex-start;
+}
+
+    h1 {
+        padding-bottom: 0.5em;
+        font-size: 3em;
+        color: #1f81c7;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+        display: flex;
+        justify-content: center;    
+    }
+
+    .contform {
+        width: 60%;
+        margin: 4em 0em 8em 0em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    form {
+        margin-bottom: 6em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        border: none;
+            border-bottom: 2px solid #000;
+        padding: 1em;
+        font-size: 1.3em;
+        width: 100%;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus {
+        border-bottom: 2px solid #000;
+    }
+    button[type="submit"] {
+        background-color:  rgb(31, 129, 199);
+        color: #fff;
+        margin-top: 2em;
+        padding: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.5em;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #104570 ;
+    }
+
+    footer {
+        background-color: #1F81C7;
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        margin-top: 1em;
+        padding: 1em;
+    }
+    .logoalli {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoimg {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .imgalliz {
+        width: 30%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .contactanos {
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        gap: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pcontact {
+        font-size: 2em;
+        color: white;
+    }
+    
+    .horario {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        gap: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    
+    .phorario {
+        font-size: 2em;
+        color: white;
+    }
+    .nuestrasredes {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        gap: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgfooter {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3em;
+    }
+    
+    .h1footer {
+        color: aliceblue;
+        font-size: 2.5em;
+    }
+    
+    .imgred, .ared{
+        object-fit: contain;
+        width: 8.5em;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 1344px) {
+
+        footer {
+            grid-template-columns: repeat(auto-fill, minmax(1344px, 1fr));
+            font-size: 2em;
+            width: 100%;
+          }
+    
+          .imgalliz {
+            width: 60%;
+            height: auto;
+            object-fit: cover;
+        }
+        li {
+            font-size: 3em;
+        }
+    
+        nav {
+            gap: 0.5;
+        }
+        
+        .nav2{
+            gap: 0.5em;
+        }    
+
+        h1 {
+            font-size: 5em;
+        }
+
+        .contform {
+            width: 90%;
+        }
+        
+
+         input[type="text"],
+         input[type="email"],
+         input[type="tel"] {
+             font-size: 3em; 
+        }
+
+        button[type="submit"] {
+            font-size: 3em;
+        }
+}
+    @media screen and (max-width: 960px) {
+        .allizhead {
+            display: none;
+        }
+        .imgalliz {
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+        }
+        body {
+            width: 100vw;
+            height: auto;
+        }
+        nav {
+            border: none;
+            max-width: 100%;
+            gap: 2em;
+            padding: none;
+        }
+
+        .logoimg {
+            height: auto;
+            width: 70vw;
+            object-fit: cover;
+        }
+
+        li {
+            font-size:3.8em;
+            list-style: none;
+        }
+
+        h1 {
+            font-size: 6em;
+        }
+
+        .contform {
+            width: 90%;
+        }
+
+        form {
+            width: 100%;
+        }
+        
+
+         input[type="text"],
+         input[type="email"],
+         input[type="tel"] {
+             font-size: 4em; 
+        }
+
+        button[type="submit"] {
+            font-size: 4em;
+        }
+}

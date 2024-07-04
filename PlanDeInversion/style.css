@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TT Firs Neue Trial Var Roman', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: solid 2px rgb(194, 192, 192);
+    padding: 1em 1.5em 0.5em 1em;
+}
+
+.logoimg {
+    height: auto;
+    width: 10em;
+    object-fit: cover;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+
+}
+ 
+li {
+    font-size: 2em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #104570;
+    font-weight: bolder;
+}
+
+.nav2 {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:3em;
+}
+
+.allizhead {
+    width: 12.5em;
+    height:auto;
+    object-fit: cover;
+    justify-self: flex-start;
+}
+
+    .planinversion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        padding: 3em;
+        gap: 3em;
+    }
+
+    .texto {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 3em;
+        color: #104570;
+    }
+
+    h1 {
+        font-size: 6em;
+        text-align: center;
+        color:  #1f81c7 ;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0.5em;
+    }
+    
+    p {
+        font-size: 3em;
+        text-align: justify;
+    }
+
+    em {
+        font-size: 3em;
+        text-align: justify;
+        color: #1f7bc7 ;
+    }
+
+    .contacto {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6em;
+    }
+
+    .whattslogo {
+        display: flex;
+        width: auto;
+        height: 10em;
+        object-fit: contain;
+    }
+
+    .imagen {
+        display: flex;
+        height: 100%;
+    }
+
+    .imginv {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 28px;
+    }
+.obten {
+    border-radius: 10px;
+    background-color: rgb(31, 129, 199);
+    color: white;
+    font-size: 3em;
+    width:auto;
+    height: auto;
+    border:none;
+    transition:background-color 0.3s ease;
+    text-align:center;
+    font-weight:normal;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding: 0.5em;
+  }
+
+  .obten:hover {
+    background-color: #2366a9;
+  }
+
+  .obten:active {
+    animation: pulse 0.3s;
+  }
+
+  footer {
+    background-color: #1F81C7;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 1em;
+    padding: 1em;
+}
+.logoalli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoimg {
+    display: flex;
+    justify-content: end;
+}
+
+.imgalliz {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contactanos {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcontact {
+    font-size: 2em;
+    color: white;
+}
+
+.horario {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.phorario {
+    font-size: 2em;
+    color: white;
+}
+.nuestrasredes {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgfooter {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+}
+
+.h1footer {
+    color: aliceblue;
+    font-size: 2.5em;
+}
+
+.imgred, .ared{
+    object-fit: contain;
+    width: 8.5em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1344px) {
+    footer {
+        grid-template-columns: repeat(auto-fill, minmax(1344px, 1fr));
+        font-size: 2em;
+        width: 100%;
+      }
+    li {
+        font-size: 3em;
+    }
+
+    nav {
+        gap: 0.5;
+    }
+    
+    .nav2{
+        gap: 0.5em;
+    }    
+    .contacto {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+    }
+    .imagen {
+        height: 100%;
+    }
+    .imginv {
+        height: 100%;
+    }
+    .whattslogo {
+        width: 15em;
+    }
+}
+@media screen and (max-width: 960px) {
+    footer {
+        margin-top: 10em;
+    }
+    .allizhead {
+        display: none;
+    }
+    body {
+        width: 100vw;
+        height: auto;
+    }
+    nav {
+        border: none;
+        max-width: 100%;
+        gap: 2em;
+        padding: none;
+    }
+
+    .logoimg {
+        height: auto;
+        width: 70vw;
+        object-fit: cover;
+    }
+
+    li {
+        font-size:5em;
+        list-style: none;
+    }
+    .planinversion {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10em;
+    }
+
+    .texto {
+        height: 100vh;
+        gap: 6em;
+    }
+    .imagen {
+        grid-row: 1;
+        height: auto;
+    }
+    .imginv {
+        height: 100%;
+    }
+    h1 {
+        font-size: 11em;
+        margin-top: 0.5em;
+    }
+    p {
+        font-size: 6em;
+    }
+    em {
+        font-size: 5em;
+    }
+    .contacto {
+        gap: 15em;
+    }
+    .obten {
+        font-size: 6em;
+        gap: 10em;
+    }
+    .whattslogo {
+        height: auto;
+        width: 78%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="haconsulting">
+    <meta name="description" content="Consultora especializada en brindar servicios relacionados con plan de retiro personal, ahorro educativo e inversión. ¡No dejes tu futuro al aire!">
+    <meta name="keywords" content="aseguradora, consultoria, plan de ahorro, plan educativo, plan de inversion">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Desarrollador: Francisco García.  Contáctame al Tel. 5535511795 o envíame un correo en  frangar096@gmail.com si buscas servicios de desarrollo web. ">
+    <meta name="copyright" content="©H&AConsulting 2023">
+    <title>H&A Consulting | Asesoría</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/h_a.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="../HomePage/"><img src="/img/logo png.png" class="logoimg" alt="logo"> </a>
+                <li><a href="../Nosotros/">Nosotros</a></li>
+                <li><a href="/HomePage/#servicios">Servicios</a></li>
+                <li><a href="../Cotizar/">Cotizar</a></li>
+            </ul>
+            <div class="nav2">
+                <img src="/img/Logo Agente Allianz.jpeg" class="allizhead" alt="logollianz">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contform">
+            <h1>
+                ¿NECESITAS MÁS INFORMACIÓN? <br> ¡RECIBE UNA ASESORÍA GRATUITA!
+            </h1>
+            <form action="formularioasesoria.php" method="post">
+                
+                <label for="nombre"></label>
+                <input type="text" placeholder="Nombre" name="nombre" required>
+                
+                <label for="email"></label>
+                <input type="email" placeholder="Email" name="correo" required>
+                
+                <label for="telefono"></label>
+                <input type="tel" placeholder="Teléfono" name="telefono" maxlength="12" required>
+                
+                <label for="sobreque"></label>
+                <input type="text" placeholder="¿Sobre qué quieres saber?" name="sobreque" required>
+                
+                <button type="submit">
+                Quiero una Asesoría Gratuita
+            </button>
+        </form>
+        </section>
+    </main>
+    <div class="logoalli">
+        <img src="/img/Logo Agente Allianz.jpeg" class="imgalliz" alt="logollianz">
+    </div>
+    <footer>
+        <div class="contactanos">
+            <h1 class="h1footer">Contáctanos</h1>
+                <p class="pcontact">55-3902-9297</p>
+                <p class="pcontact">contacto@haconsulting.mx</p>
+                <p class="pcontact">México, CDMX.</p>
+        </div>
+        <div class="horario">
+            <h1 class="h1footer">Horario de atención</h1>
+                <p class="phorario">Lunes a Viernes: 09:00-19:00</p>
+                <p class="phorario">Sábados: 09:00-15:00</p>
+        </div>
+        <div class="nuestrasredes">
+            <h1 class="h1footer">Visítanos</h1>
+            <div class="imgfooter">
+                <a href="#" class="ared"><img src="/img/facebook.png" class="imgred" alt="facebooklogo"></a>
+                <a href="https://api.whatsapp.com/send?phone=5539029297&text=¡Hola que tal! Me gustaría saber más acerca de sus planes." class="ared" target="_blank"><img src="/img/whattsverde.png" class="imgred" alt="whattsapplogo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

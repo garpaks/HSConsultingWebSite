@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TT Firs Neue Trial Var Roman', sans-serif;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header""main""footer";
+
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: solid 2px rgb(194, 192, 192);
+    padding: 1em 1.5em 0.5em 1em;
+}
+
+.logoimg {
+    height: auto;
+    width: 10em;
+    object-fit: cover;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+
+}
+ 
+li {
+    font-size: 2em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #104570;
+    font-weight: bolder;
+}
+
+.nav2 {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:3em;
+}
+
+.allizhead {
+    width: 12.5em;
+    height:auto;
+    object-fit: cover;
+    justify-self: flex-start;
+}
+
+.asesoriaboton {
+    color: white;
+    background-color: rgb(31, 129, 199);
+    padding: 1em;
+    border-radius: 10px;
+    border-color: rgb(31, 129, 199);
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    outline: none;
+    width: 100%;
+}
+
+.asesoriaboton:hover,
+.asesoriaboton:active {
+    opacity: 0.8; 
+
+}
+.asesoriabotoncont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #1f81c7;
+    background-color:white ;
+    }
+
+.informacion {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	padding: 1em;
+	margin-top: 3em;
+	height: auto;
+}
+.quienessomos {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.titulo {
+	text-align: center;
+	font-size: 4em;
+	color: rgb(31, 129, 199);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.parrafo1 {
+	text-align: justify;
+	color: #104570;
+	font-weight: normal;
+	font-size: 2em;
+}
+.parrafo2 {
+	text-align: justify;
+	color: #104570;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+.parrafo3 {
+	font-size: 2em;
+	text-align: center;
+	display: flex;
+	align-items: start;
+	font-weight: bold;
+	color: #00006A;
+}
+.imgmanoscont {
+	position: relative;
+}
+.imgmanos {
+	object-fit: cover;
+	height: auto;
+	width: 100%;
+	border-radius: 28px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.imgmanos2 {
+	object-fit: cover;
+	height: auto;
+	width: 100%;
+	border-radius: 28px;
+	filter: blur(6px);
+	z-index: 2;
+}
+footer {
+    background-color: #1F81C7;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 1em;
+    padding: 1em;
+}
+.logoalli {
+	display: flex;
+	justify-content: center;
+}
+.logoimg {
+    display: flex;
+    justify-content: end;
+}
+
+.imgalliz {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    margin-top: 1em;
+}
+
+.contactanos {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcontact {
+    font-size: 2em;
+    color: white;
+}
+
+.horario {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.phorario {
+    font-size: 2em;
+    color: white;
+}
+.nuestrasredes {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgfooter {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+}
+
+.h1footer {
+    color: aliceblue;
+    font-size: 2.5em;
+}
+
+.imgred, .ared{
+    object-fit: contain;
+    width: 8.5em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1344px) {
+
+    footer {
+		grid-template-columns: repeat(auto-fill, minmax(1344px, 1fr));
+		font-size: 2em;
+		width: 100%;
+	  }
+
+	  .imgalliz {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 5em;
+    }
+
+    li {
+        font-size: 3em;
+    }
+
+    nav {
+        gap: 0.5;
+    }
+    
+    .nav2{
+        gap: 0.5em;
+    }
+
+    .asesoriaboton {
+        font-size: 1.2em;
+    }
+
+	.informacion {
+		grid: none;
+		grid-template-rows: repeat(auto-fill, minmax(960px,1fr));
+		grid-template-columns: none;
+		gap: 14em;
+		padding: 2em;
+		margin-top: 2em;
+		height: auto;
+		width: auto;
+	}
+	.imgmanoscont {
+		grid-row: 2;
+	}
+	.imgmanos {
+		object-fit: cover;
+		height: auto;
+		width: 100%;
+		position: absolute;
+	}
+	.imgmanos2 {
+		object-fit: cover;
+		height: auto;
+		width: 100%;
+	}
+	.titulo {
+		text-align: center;
+		font-size: 8em;
+	}
+	.parrafo1 {
+		font-size: 4em;
+	}
+	.parrafo2 {
+		font-size: 3.5em;
+	}
+	.parrafo3 {
+		font-size: 4em;
+	}
+	.quienessomos {
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+		gap:7em;
+		padding-left: 2em;
+		padding-right: 2em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 960px) {
+	.allizhead {
+		display: none;
+	}
+	.imgalliz {
+		width: 90%;
+		height: auto;
+		object-fit: cover;
+		margin-top: 8em;
+	}
+	body {
+        width: 100vw;
+        height: auto;
+    }
+    nav {
+        border: none;
+        max-width: 100%;
+        gap: 2em;
+        padding: none;
+    }
+    .logoimg {
+        height: auto;
+        width: 70vw;
+        object-fit: cover;
+    }
+    li {
+        font-size:3.8em;
+        list-style: none;
+    }
+    .asesoriaboton {
+        font-size: 2em;
+        width: auto;
+        height: auto;
+    }
+    .asesoriabotoncont {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: #1f81c7;
+        background-color:white ;
+        height: auto;
+        width: 100%;
+        }
+	.imgalliz {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.informacion {
+		grid-template-rows: repeat(auto-fill, minmax(960px,1fr));
+		grid-template-columns: none;
+		gap: 14em;
+		padding: 2em;
+		margin-top: 2em;
+		height: auto;
+		width: auto;
+	}
+	.imgmanoscont {
+		grid-row: 2;
+	}
+	.imgmanos {
+		object-fit: cover;
+		height: auto;
+		width: 100%;
+		position: absolute;
+	}
+	.imgmanos2 {
+		object-fit: cover;
+		height: auto;
+		width: 100%;
+	}
+	.titulo {
+		text-align: center;
+		font-size: 8em;
+	}
+	.parrafo1 {
+		font-size: 4em;
+	}
+	.parrafo2 {
+		font-size: 3.5em;
+	}
+	.parrafo3 {
+		font-size: 4em;
+	}
+	.quienessomos {
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+		gap:7em;
+		padding-left: 2em;
+		padding-right: 2em;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}

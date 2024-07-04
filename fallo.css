@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'TT Firs Neue Trial Var Roman', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header""main""footer";
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-bottom: solid 2px rgb(194, 192, 192);
+    padding: 1em 1.5em 0.5em 1em;
+    gap: 3em;
+}
+
+.logoimg {
+    height: auto;
+    width: 10em;
+    object-fit: cover;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    align-items: center;
+    gap: 3.5em;
+
+}
+ 
+li {
+    font-size: 2em;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #104570;
+    font-weight: bolder;
+}
+
+.wha {
+    object-fit: cover;
+    width: 100%;
+}
+
+.asesoriaboton {
+    color: white;
+    background-color: rgb(31, 129, 199);
+    padding: 1em;
+    border-radius: 10px;
+    border-color: rgb(31, 129, 199);
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    outline: none;
+    width: 100%;
+}
+
+.asesoriaboton:hover,
+.asesoriaboton:active {
+    opacity: 0.8; 
+
+}
+.asesoriabotoncont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #1f81c7;
+    background-color:white ;
+    }
+
+    #envioexitoso {
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: #1f81c7;
+        text-shadow: 2px 2px 4px rgba(92, 89, 89, 0.4);
+        font-size: 4em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 1344px) {
+        li {
+            font-size: 3em;
+        }
+    
+        .asesoriaboton {
+            font-size: 1.2em;
+        }
+        h1 {
+            font-size: 4em;
+        }
+        
+        }
+        @media screen and (max-width: 960px) {
+            h1 {
+                font-size: 8em;
+            }
+            .wha{
+                width: auto;
+                height: auto;
+            }
+            body {
+                width: 100vw;
+                height: auto;
+            }
+            nav {
+                border: none;
+                max-width: 100%;
+                gap: 2em;
+                padding: none;
+            }
+    
+            .logoimg {
+                height: auto;
+                width: 70vw;
+                object-fit: cover;
+            }
+    
+            li {
+                font-size:3.8em;
+                list-style: none;
+            }
+    
+            .asesoriaboton {
+                font-size: 2em;
+                width: auto;
+                height: auto;
+            }
+    
+            .asesoriabotoncont {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: #1f81c7;
+                background-color:white ;
+                height: auto;
+                width: 100%;
+                }
+            }
